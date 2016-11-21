@@ -407,6 +407,48 @@ ipacheckconstraints ${variable8}, smin(${soft_min8}) ///
 	keepvars("${keep_variable8}") ///
     saving("check08_test03_out.xlsx") ///
     sheetreplace
+
+* Test 4
+use check08_test04, clear
+ipacheckimport using "check08_test04_in.xlsx"
+ipacheckconstraints ${variable8}, smin(${soft_min8}) ///
+    smax(${soft_max8}) ///
+	hmin(${hard_min8}) ///
+	hmax(${hard_max8}) ///
+    id(id) ///
+    enumerator(enum) ///
+    submit(var3) ///
+	keepvars("${keep_variable8}") ///
+    saving("check08_test04_out.xlsx") ///
+    sheetreplace
+	
+* Test 5
+use check08_test05, clear
+ipacheckimport using "check08_test05_in.xlsx"
+ipacheckconstraints ${variable8}, smin(${soft_min8}) ///
+    smax(${soft_max8}) ///
+	hmin(${hard_min8}) ///
+	hmax(${hard_max8}) ///
+    id(id) ///
+    enumerator(enum) ///
+    submit(var3) ///
+	keepvars("${keep_variable8}") ///
+    saving("check08_test05_out.xlsx") ///
+    sheetreplace
+	
+* Test 6
+use check08_test06, clear
+ipacheckimport using "check08_test06_in.xlsx"
+ipacheckconstraints ${variable8}, smin(${soft_min8}) ///
+    smax(${soft_max8}) ///
+	hmin(${hard_min8}) ///
+	hmax(${hard_max8}) ///
+    id(id) ///
+    enumerator(enum) ///
+    submit(var3) ///
+	keepvars("${keep_variable8}") ///
+    saving("check08_test06_out.xlsx") ///
+    sheetreplace
 	
 	
 /* =================================================
